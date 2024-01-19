@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
@@ -7,7 +8,7 @@ export default function Home() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    localStorage.setItem("username", userName);
+    localStorage.setItem("userName", userName);
     navigate("/chat");
   };
 
